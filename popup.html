@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Kkuma's X Cobalt Downloader</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="card">
+      <header>
+        <h1>Kkuma's X Cobalt Downloader</h1>
+        <p class="muted">Configure your cobalt instance.</p>
+      </header>
+
+      <form id="settings">
+        <div class="field">
+          <label for="instance">Instance</label>
+          <input
+            id="instance"
+            type="url"
+            placeholder="https://api.cobalt.example.com"
+            autocomplete="off"
+            spellcheck="false"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="apikey">
+            API key <span class="muted">(optional)</span>
+          </label>
+          <input
+            id="apikey"
+            type="text"
+            placeholder="00000000-0000-0000-0000-000000000000"
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </div>
+
+        <button type="submit" id="save">Save</button>
+        <p id="status" class="status" aria-live="polite"></p>
+      </form>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

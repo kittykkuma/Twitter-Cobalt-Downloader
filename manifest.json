@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "kkuma cobalt",
+  "version": "1.1.0",
+  "description": "Download media from X/Twitter via your cobalt instance",
+  "permissions": ["downloads", "storage"],
+  "host_permissions": [
+    "https://x.com/*",
+    "https://twitter.com/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Kkuma's X Cobalt Downloader",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
