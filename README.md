@@ -4,6 +4,16 @@ A small Chrome extension that adds a download button to posts on X/Twitter. It s
 
 I built this because I got tired of copying tweet links over to a cobalt tab every time I wanted to save a video. Now there's just a button next to the reply/retweet/like row.
 
+## What it looks like
+
+The download button sits right next to the bookmark and share icons:
+
+![download button on a tweet](screenshots/button.png)
+
+And the popup where you point it at your cobalt instance:
+
+![settings popup](screenshots/popup.png)
+
 ## Install
 
 1. Clone or download this repo.
